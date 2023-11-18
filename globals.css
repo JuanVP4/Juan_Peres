@@ -1,0 +1,354 @@
+
+
+.login {
+  background-color: brown;
+}
+
+.header {
+  display:flex;
+}
+
+.container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  margin-right: 300px;
+}
+
+.sobre {
+  margin-right: 300px;
+}
+
+.login {
+  margin-right: 300px;
+}
+
+body {
+  background-color: rgba(240, 255, 255, 0.76);
+}
+
+.about-bg {
+    background-image: url('12124314.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+  color: white;
+}
+
+body.about-bg {
+    background-image: url('12124314.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.about-heading {
+    background-color: #333; /* Cor de fundo para o texto */
+    color: white; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+body.home-bg {
+    background-image: url('grama.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Adicione estas regras ao seu arquivo styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+    color: #333; /* Cor do texto dos labels */
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+}
+
+/* Reset de Estilos (opcional, remove margens e preenchimentos padrão) */
+body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo da página */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    background-color: white; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 8px; /* Borda arredondada do formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil do formulário */
+}
+
+label {
+    margin-top: 10px;
+    color: #333; /* Cor do texto dos labels */
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Borda fina ao redor dos campos de entrada */
+    border-radius: 5px; /* Borda arredondada dos campos de entrada */
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Borda arredondada do botão */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos para a mensagem de sucesso */
+#successMessage {
+    background-color: #4CAF50;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 100;
+    width: 50%;
+    display: none;
+    animation: fadeIn 5s; /* Adiciona uma pequena animação de fade-in */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
