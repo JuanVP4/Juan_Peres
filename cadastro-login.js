@@ -50,6 +50,15 @@ function doLogin() {
     } else {
         alert('Credenciais inválidas. Tente novamente.');
     }
+
+    // Verifica se as credenciais são válidas
+    var loggedInUser = null;
+    for (var i = 0; i < users.length; i++) {
+        if (users[i].email === email && users[i].password === password) {
+            loggedInUser = users[i];
+            break; // Encontrou o usuário, podemos sair do loop
+        }
+    }
 }
 
 function showSuccessMessage() {

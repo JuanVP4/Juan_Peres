@@ -1,34 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="globals.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-text-container {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .img-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img_1, .img_2, .img_3, .img_4 {
+      width: 800px; /* Ajuste a largura conforme necessário */
+      height: 500px; /* Ajuste a altura conforme necessário */
+      margin: 50px; /* Adicione margem entre as imagens */
+      background-color: #ccc; /* Adicione uma cor de fundo para simular as imagens */
+      background-repeat: no-repeat;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  </style>
   <title>Document</title>
 </head>
-<body>  
-  <div class="img_1">imagem 1</div>
-  <h1 >Selecione a quadra data/horário desejado</h1>
-  <div class="img_2">Imagem 2</div>
-  <h1>Selecione a quadra data/horário desejado</h1>
-  <div class="img_3">Imagem 3</div>
-  <h1>Selecione a quadra data/horário desejado</h1>
-  <div class="img_4">Imagem 4</div>
-  <h1>Selecione a quadra data/horário desejado</h1>
+<body class="login_body">  
+  <div class="image-text-container">
+    <div class="img-container">
+      <div class="img_1"></div>
+      <h1>Quadra 1</h1>
+      <input type="datetime-local" id="datetime_1" name="datetime_1">
+      <button onclick="confirmarReserva(1)">Confirmar</button>
+    </div>
+    <h1>Selecione a quadra data/horário desejado</h1>
+  </div>
 
-</body>
-</html>
+  <div class="image-text-container">
+    <div class="img-container">
+      <div class="img_2"></div>
+      <h1>Quadra 2</h1>
+      <input type="datetime-local" id="datetime_2" name="datetime_2">
+      <button onclick="confirmarReserva(2)">Confirmar</button>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendário e Horário Selecionáveis</title>
-</head>
-<body>
+    </div>
+    <h1>Selecione a quadra data/horário desejado</h1>
+  </div>
 
-    <label for="dataHoraSelecionavel">Selecione uma data e hora:</label>
-    <input type="datetime-local" id="dataHoraSelecionavel" name="dataHoraSelecionavel">
+  <div class="image-text-container">
+    <div class="img-container">
+      <div class="img_3"></div>
+      <h1>Quadra 3</h1>
+      <input type="datetime-local" id="datetime_3" name="datetime_3">
+      <button onclick="confirmarReserva(3)">Confirmar</button>
+    </div>
+    <h1>Selecione a quadra data/horário desejado</h1>
+  </div>
 
+  <div class="image-text-container">
+    <div class="img-container">
+      <div class="img_4"></div>
+      <h1>Quadra 4</h1>
+      <input type="datetime-local" id="datetime_4" name="datetime_4">
+      <button onclick="confirmarReserva(4)">Confirmar</button>
+    </div>
+    <h1>Selecione a quadra data/horário desejado</h1>
+  </div>
+
+  <button onclick="irParaResumo()">Resumo</button>
+
+  <script>
+    function irParaResumo() {
+      window.location.href = 'pagina_resumo.html';
+    }
+
+    function confirmarReserva(quadra) {
+      var datetimeInput = document.getElementById("datetime_" + quadra);
+      var selectedDateTime = datetimeInput.value;
+
+      if (selectedDateTime) {
+        // Coletar informações adicionais (por exemplo, nome, e-mail, número da quadra) aqui
+        var nome = prompt("Digite seu nome:");
+        var email = prompt("Digite seu e-mail:");
+        var numeroQuadra = quadra;
+        // Criar um objeto com as informações
+        var reservaInfo = {
+          nome: nome,
+          email: email,
+          numeroQuadra: numeroQuadra,
+          dataHora: selectedDateTime
+        };
+
+        // Armazenar as informações na sessão ou local storage se necessário
+        sessionStorage.setItem("reservaInfo", JSON.stringify(reservaInfo));
+
+        // Redirecionar para a página de resumo
+        // window.location.href = "pagina_resumo.html";
+        console.log(reservaInfo);
+      } else {
+        alert("Selecione uma data e hora antes de confirmar a reserva.");
+      }
+    }
+  </script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo da Reserva</title>
+</head>
+<body>
+  <h1>Resumo da Reserva</h1>
+
+  <script>
+    // Recuperar as informações armazenadas na sessão
+    var reservaInfoString = sessionStorage.getItem("reservaInfo");
+    if (reservaInfoString) {
+      var reservaInfo = JSON.parse(reservaInfoString);
+
+      // Exibir informações no resumo
+      document.write("<p><strong>Nome:</strong> " + reservaInfo.nome + "</p>");
+      document.write("<p><strong>E-mail:</strong> " + reservaInfo.email + "</p>");
+      document.write("<p><strong>Número da Quadra:</strong> " + reservaInfo.numeroQuadra + "</p>");
+      document.write("<p><strong>Data e Hora:</strong> " + reservaInfo.dataHora + "</p>");
+    } else {
+      document.write("<p>Nenhuma informação de reserva disponível.</p>");
+    }
+  </script>
+</body>
+</html>

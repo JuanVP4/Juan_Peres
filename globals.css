@@ -352,3 +352,30 @@ button:hover {
     }
 }
 
+.img_1 {
+    background-image: url(Camp_1.jpg);
+    width: 600px;
+    height: 400px;
+}
+
+.img_2 {
+    background-image: url(Camp_2.jpg);
+    width: 600px;
+    height: 400px;
+}
+
+.img_3 {
+    background-image: url(Camp_3.jpeg);
+    width: 600px;
+    height: 400px;
+}
+
+.img_4 {
+    background-image: url(Camp_4.jpg);
+    width: 600px;
+    height: 400px;
+}
+
+.login_body {
+
+}
