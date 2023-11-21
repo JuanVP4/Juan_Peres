@@ -3,9 +3,9 @@
 function doSignup() {
     var fullname = document.getElementById('fullname').value;
     var email = document.getElementById('email').value;
-    var password = document.getElementById('senha').value; // Alterado para 'senha'
+    var password = document.getElementById('senha').value;
 
-    // Simulando armazenamento local (LocalStorage)
+    // armazenamento local
     var users = JSON.parse(localStorage.getItem('users')) || [];
 
     // Verifica se o e-mail já está cadastrado
@@ -24,8 +24,7 @@ function doSignup() {
         };
 
         users.push(newUser);
-
-        // Atualiza a lista no armazenamento local
+        
         localStorage.setItem('users', JSON.stringify(users));
 
         showSuccessMessage();
@@ -35,11 +34,10 @@ function doSignup() {
 function doLogin() {
     var email = document.getElementById('username').value; // Alterado para 'username'
     var password = document.getElementById('password').value;
-
-    // Simulando armazenamento local (LocalStorage)
+    
     var users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // Verifica se as credenciais são válidas
+    // Verifica as credenciais
     var loggedInUser = users.find(function(user) {
         return user.email === email && user.password === password;
     });
@@ -51,7 +49,7 @@ function doLogin() {
         alert('Credenciais inválidas. Tente novamente.');
     }
 
-    // Verifica se as credenciais são válidas
+    // Verifica as credenciais
     var loggedInUser = null;
     for (var i = 0; i < users.length; i++) {
         if (users[i].email === email && users[i].password === password) {
@@ -65,8 +63,8 @@ function showSuccessMessage() {
     var successMessage = document.getElementById('successMessage');
     successMessage.classList.remove('hidden');
 
-    // Oculta a mensagem após alguns segundos (1000 milissegundos = 1 segundo)
+    
     setTimeout(function() {
         successMessage.classList.add('hidden');
-    }, 3000); // Oculta após 3 segundos (ajuste conforme necessário)
+    }, 3000);
 }
