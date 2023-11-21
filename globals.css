@@ -50,8 +50,8 @@ body.about-bg {
 }
 
 .about-heading {
-    background-color: #333; /* Cor de fundo para o texto */
-    color: white; /* Cor do texto */
+    background-color: #333;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -86,7 +86,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+    margin-top: 50px;
 }
 
 form {
@@ -154,7 +154,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+    margin-top: 50px;
 }
 
 form {
@@ -184,8 +184,6 @@ button {
 button:hover {
     background-color: #555;
 }
-
-/* Adicione estas regras ao seu arquivo styles.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -225,7 +223,7 @@ form {
 
 label {
     margin-top: 10px;
-    color: #333; /* Cor do texto dos labels */
+    color: #333;
 }
 
 input {
@@ -255,10 +253,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+    margin-top: 50px;
 }
 
-/* Reset de Estilos (opcional, remove margens e preenchimentos padrão) */
 body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote, dl, dd {
     margin: 0;
     padding: 0;
@@ -297,23 +294,23 @@ form {
     flex-direction: column;
     max-width: 300px;
     margin: auto;
-    background-color: white; /* Cor de fundo do formulário */
+    background-color: white; 
     padding: 20px;
-    border-radius: 8px; /* Borda arredondada do formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil do formulário */
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 label {
     margin-top: 10px;
-    color: #333; /* Cor do texto dos labels */
+    color: #333; 
 }
 
 input {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc; /* Borda fina ao redor dos campos de entrada */
-    border-radius: 5px; /* Borda arredondada dos campos de entrada */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
 }
 
 button {
@@ -323,14 +320,13 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px; /* Borda arredondada do botão */
+    border-radius: 5px; 
 }
 
 button:hover {
     background-color: #555;
 }
 
-/* Estilos para a mensagem de sucesso */
 #successMessage {
     background-color: #4CAF50;
     color: black;
@@ -340,7 +336,7 @@ button:hover {
     top: 100;
     width: 50%;
     display: none;
-    animation: fadeIn 5s; /* Adiciona uma pequena animação de fade-in */
+    animation: fadeIn 5s;
 }
 
 @keyframes fadeIn {
