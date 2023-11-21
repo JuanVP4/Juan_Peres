@@ -9,12 +9,12 @@
   <h1>Resumo da Reserva</h1>
 
   <script>
-    // Recuperar as informações armazenadas na sessão
+    // Recupera as informações armazenadas.
     var reservaInfoString = sessionStorage.getItem("reservaInfo");
     if (reservaInfoString) {
       var reservaInfo = JSON.parse(reservaInfoString);
 
-      // Exibir informações no resumo
+      // Exibir as informações que estão armazenadas.
       document.write("<p><strong>Nome:</strong> " + reservaInfo.nome + "</p>");
       document.write("<p><strong>E-mail:</strong> " + reservaInfo.email + "</p>");
       document.write("<p><strong>Número da Quadra:</strong> " + reservaInfo.numeroQuadra + "</p>");
