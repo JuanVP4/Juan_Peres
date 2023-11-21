@@ -22,10 +22,10 @@
     }
 
     .img_1, .img_2, .img_3, .img_4 {
-      width: 800px; /* Ajuste a largura conforme necessário */
-      height: 500px; /* Ajuste a altura conforme necessário */
-      margin: 50px; /* Adicione margem entre as imagens */
-      background-color: #ccc; /* Adicione uma cor de fundo para simular as imagens */
+      width: 800px;
+      height: 500px;
+      margin: 50px;
+      background-color: #ccc;
       background-repeat: no-repeat;
     }
 
@@ -89,11 +89,11 @@
       var selectedDateTime = datetimeInput.value;
 
       if (selectedDateTime) {
-        // Coletar informações adicionais (por exemplo, nome, e-mail, número da quadra) aqui
+        // Coleta informações.
         var nome = prompt("Digite seu nome:");
         var email = prompt("Digite seu e-mail:");
         var numeroQuadra = quadra;
-        // Criar um objeto com as informações
+        // Criar um objeto.
         var reservaInfo = {
           nome: nome,
           email: email,
@@ -101,11 +101,9 @@
           dataHora: selectedDateTime
         };
 
-        // Armazenar as informações na sessão ou local storage se necessário
+        // Armazenar as informações
         sessionStorage.setItem("reservaInfo", JSON.stringify(reservaInfo));
-
-        // Redirecionar para a página de resumo
-        // window.location.href = "pagina_resumo.html";
+        
         console.log(reservaInfo);
       } else {
         alert("Selecione uma data e hora antes de confirmar a reserva.");
